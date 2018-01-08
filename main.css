@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (min-width:780px) {
+.container {
+  height: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(20, 2fr);
+  grid-gap: 5px;
+}
+
+.box {
+  background-color: #cccc;
+  color: #000000;
+}
+
+.start {
+  background-color: #343a40;
+  color: #fff;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.menu-list {
+  float: right;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+}
+
+.menu-item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.business {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 10;
+}
+
+.img-spotify {
+  background-image: url(images/spotify_logo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.what {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-left: 40px;
+  text-align: left;
+  grid-row-start: 10;
+  grid-row-end: 14;
+}
+
+.contact {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 40px;
+  grid-row-start: 10;
+  grid-row-end: 14;
+}
+
+.card-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 40px;
+  grid-row-start: 14;
+  grid-row-end: 22;
+}
+
+.img-card {
+  background-image: url(images/genius.png);
+  height: 90%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 40px;
+  grid-row-start: 14;
+  grid-row-end: 22;
+}
+
+.card-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 40px;
+  grid-row-start: 14;
+  grid-row-end: 22;
+}
+h4{
+  margin-left: 40px;
+  margin-top: 0px;
+}
+.copy {
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 24;
+  grid-row-end: 26;
+  background-color: #343a40;
+  color: #FFF;
+}
+
+.copy > p {
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+}
